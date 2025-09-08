@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Homework Project</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100wh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            border: 2px solid black;
+            width: 500px;
+            padding: 20px;
+            background: rgb(246, 238, 224);
+            
+        }
+        button{
+            cursor: pointer;
+            border-radius: 30px;
+            padding: 6px;
+            background-color: red;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+       
+         <h2>Job Application : Senior Wev Developer</h2>
+        <p>Thank you for your intereset in joining our team. Please fill out the application below.</p>
+        <hr>
+   
+        <h3>Personal Information</h3>
+        <label for="name">Full Name : </label><br>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+
+        <label for="email">Email : </label><br>
+        <input type="text" name="email" id="email" required>
+        <br><br>
+
+        <label for="phone">Phone : </label><br>
+        <input type="tel" name="phone" id="phone">
+        <br><br>
+
+        <label for="link">Linkedin Profile URL : </label>
+        <br>
+        <input type="file" name="link" id="link">
+        <hr>
+
+        
+       
+        
+        <h3>Professional Experience</h3>
+        <label for="resume">Upload Your Resume(PDF or DOCX): </label>
+        <br>
+        <input type="file" name="resume" id="resume"><br><br>
+    
+        <label for="letter">Cover Latter : </label>
+        <br>
+        <textarea name="letter" id="letter" rows="10" cols="30" placeholder="Tell us why you're a grat fit for this role..."></textarea>
+        <br><br>
+
+        <label for="year">Years of Professional Experience : </label><br>
+        <input type="text" name="year" id="year">
+        <br><br>
+        
+        <label for="jdate">Earliest Possible Start Date : </label><br>
+        <input type="date" name="jdate" id="jdate">
+        <br><br>
+        <hr>
+        
+        
+        <h3>Skills & Availabilty</h3>
+        <label for="gender">Primary Skillest (Choose One) : </label>
+        <br>
+        <input type="radio" name="skill" id="frontend" value="fronted">
+        <label for="fronted">Frontend Development</label>
+        <br>
+        <input type="radio" name="skill" id="backend" value="backend">
+        <label for="backend">Backend Development</label>
+        <br>
+        <input type="radio" name="skill" id="fullstack" value="fullstack">
+        <label for="fullstack">Fullstack development</label>
+        <br><br>
+
+        <label for="extraSkill">Additional Skills (Select all that apply) : </label>
+        <br>
+        <input type="checkbox" name="extraSkill" id="react" value="react">
+        <label for="react">React</label>
+        <br>
+        <input type="checkbox" name="extraSkill" id="nodejs" value="nodejs">
+        <label for="nodejs">Node.Js</label>
+        <br>
+       <input type="checkbox" name="extraSkill" id="dbms" value="dbms">
+        <label for="dbms">Database Management</label>
+        <br>
+        <input type="checkbox" name="extraSkill" id="cloud" value="cloud">
+        <label for="cloud">Cloud/Devops</label>
+        <br><br>
+
+        <label for="work">Preferred Work Type : </label>
+        <br>
+        <select name="work" id="work">
+            <option value="fulltime">Full Time</option>
+            <option value="part">Part Time</option>
+            <option value="remote">Remote Job</option>
+        </select>
+        <hr>
+       
+
+       
+        <h3>Final Confirmation</h3>
+        <input type="checkbox" name="terms" id="terms" value="agree">
+        <label for="terms">I am legally authorized to work in this country.</label>
+        <br><br>
+
+        <label for="answer">How did you hear about us ?</label><br>
+        <input type="text" name="answer" id="answer" placeholder="e.g.Linkedin,company"><br><br>
+
+         <button type="submit">Submit Application</button>
+        <button type="reset">Clear Form</button>
+     
+        
+    </form>
+    </div>   
+</body>
+</html>
+

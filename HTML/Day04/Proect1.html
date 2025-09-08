@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Project</title>
+</head>
+<body>
+    <div style="width: 500px; border: 2px solid black; margin: 50px; background-color: bisque;">
+    <form action="" style="padding: 10px;">
+        <h2 style="text-align: center;">University Registration Form</h2>
+        <p style="text-align: center;">Please fill out the form below to register</p>
+        <hr>
+
+        <h3>Personal Details</h3>
+        <label for="fname">First Name : </label>
+        <input type="text" name="fname" id="fname" placeholder="e.g. Arjun" required>
+        <br><br>
+
+        <label for="lname">Last Name : </label>
+        <input type="text" name="lname" id="lname" placeholder="e.g. Kumar" required>
+        <br><br>
+
+        <label for="dob">Date of Birth : </label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+
+        <label for="gender">Gender : </label>
+        <br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" name="gender" id="other" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="photo">Upload Your Photo : </label>
+        <br>
+        <input type="file" name="photo" id="photo">
+        <hr>
+
+        <h3>Contact Information</h3>
+        <label for="email">Email Address : </label>
+        <input type="email" name="email" id="email" placeholder="you@example.com" required>
+        <br><br>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="e.g. 98989333475" required>
+        <br><br>
+
+        <label for="address">Mailing Address : </label>
+        <br>
+        <textarea name="address" id="address" rows="10" cols="30" placeholder="street Address, city, state, ZIP code"></textarea>
+        <hr>
+
+        <h3>Academic Information</h3>
+        <label for="course">Select Your Course : </label>
+        <br>
+        <select name="course" id="course">
+            <option value="CSE">Computer Science</option>
+            <option value="ME">Michanical Engineering</option>
+            <option value="CE">Civil Engineering</option>
+        </select>
+        <br><br>
+
+        <label for="interest">Extracurricular Interest : </label>
+        <br>
+        <input type="checkbox" name="interest" id="sports" value="sports">
+        <label for="sports">Sports</label>
+        <br>
+        <input type="checkbox" name="interest" id="music" value="music">
+        <label for="music">Music & Arts</label>
+        <br>
+        <input type="checkbox" name="interest" id="tech" value="tech">
+        <label for="tech">Technology Clubs</label>
+        <br>
+        <input type="checkbox" name="interest" id="vol" value="vol">
+        <label for="vol">Voluntering</label>
+        <hr>
+
+        <h3>Create Your Account</h3>
+        <label for="pass">Create a Paasword : </label>
+        <input type="password" name="pass" id="pass">
+        <br><br>
+        <label for="question">Security Question : </label>
+        <select name="question" id="question">
+            <option value="petname">What was your first pet's name?</option>
+            <option value="nickname">What was your nick name?</option>
+        </select>
+        <br><br>
+
+        <label for="answer">Security Answer : </label>
+        <input type="text" name="answer" id="answer">
+        <br><br>
+
+        <input type="checkbox" name="terms" id="terms" value="agree">
+        <label for="terms">I agree to the Terms and Condition.</label>
+
+        <hr>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+    </form>
+    </div>
+</body>
+</html>
+
+<!-- http://127.0.0.1:5500/HTML/Day04/Proect1.html?fname=soham+&lname=chauhan&dob=2025-09-09&gender=male&photo=s1.png&email=raj%40gmail.com&phone=9913127632&address=kalyana%2C+gujarat%2C+india&course=CSE&sports=sports&music=music&tech=tech&pass=sohamchauhan123&question=nickname&answer=sallu&terms=agree -->

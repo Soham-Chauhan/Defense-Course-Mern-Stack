@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>M. Sc. (CA & IT) Semester – IX</title>
+<style>
+  :root{
+    --w: 980px;          /* overall page width */
+    --tbl: 940px;        /* main table width (inside margins) */
+    --font: "Times New Roman", Times, serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:20px auto 28px;
+    width:var(--w);
+    font-family:var(--font);
+    color:#000;
+  }
+  .heading{
+    text-align:center;
+    line-height:1.2;
+  }
+  .h1{font-size:18px; font-weight:bold; letter-spacing:.2px;}
+  .h2{font-size:16px; font-weight:bold; margin-top:4px;}
+  .h3{font-size:18px; font-weight:bold; margin-top:8px;}
+  .mt8{margin-top:8px;}
+  table{
+    width:var(--tbl);
+    margin:10px auto 6px;
+    border-collapse:collapse;
+    table-layout:fixed;
+    font-size:13px;
+  }
+  th, td{
+    border:1px solid #000;
+    padding:4px 6px;
+    vertical-align:middle;
+  }
+  th{font-weight:bold;}
+  .center{text-align:center;}
+  .left{text-align:left;}
+  .right{text-align:right;}
+  /* column widths (match image proportions) */
+  colgroup col.c1{width:60px;}   /* Sub. No. */
+  colgroup col.c2{width:250px;}  /* Subject Name */
+  colgroup col.c3{width:70px;}   /* Total Credit */
+  colgroup col.c4{width:95px;}   /* Theory - Lectures H/W */
+  colgroup col.c5{width:95px;}   /* Practical - Per Batch H/W */
+  colgroup col.c6{width:55px;}   /* Internal IT */
+  colgroup col.c7{width:55px;}   /* Internal IP */
+  colgroup col.c8{width:55px;}   /* External ET */
+  colgroup col.c9{width:55px;}   /* External EP */
+  colgroup col.c10{width:70px;}  /* Total Theory */
+  colgroup col.c11{width:70px;}  /* Total Practical */
+  /* row heights to mimic image */
+  tr.hdr1 th{height:36px;}
+  tr.hdr2 th{height:34px;}
+  tr.hdr3 th{height:32px;}
+  tr.row{height:34px;}
+  tr.total{height:34px; font-weight:bold;}
+  /* small text lines under table */
+  .note{
+    width:var(--tbl);
+    margin:6px auto 0;
+    font-size:12px;
+    line-height:1.25;
+  }
+  .legend{
+    width:var(--tbl);
+    margin:4px auto 8px;
+    font-size:12px;
+  }
+  .list-wrap{
+    width:var(--tbl);
+    margin:8px auto 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:8px 24px;
+    align-items:start;
+  }
+  .list-title{font-weight:bold; text-decoration:underline; margin-bottom:4px;}
+  ol{margin:6px 0 0 18px; padding:0; font-size:13px; line-height:1.35;}
+</style>
+</head>
+<body>
+  <div class="heading">
+    <div class="h1">HEMCHANDRACHARYA NORTH GUJARAT UNIVERSITY, PATAN</div>
+    <div class="h2">DEPARTMENT OF COMPUTER SCIENCE</div>
+    <div class="h2 mt8">SEMESTER CBCS</div>
+    <div class="h3 mt8">M. Sc. (CA &amp; IT) SEMESTER – IX</div>
+  </div>
+
+  <table>
+    <colgroup>
+      <col class="c1"><col class="c2"><col class="c3">
+      <col class="c4"><col class="c5">
+      <col class="c6"><col class="c7"><col class="c8"><col class="c9">
+      <col class="c10"><col class="c11">
+    </colgroup>
+
+    <!-- Top header row -->
+    <tr class="hdr1">
+      <th rowspan="3" class="center">Sub.<br/>No.</th>
+      <th rowspan="3" class="center">Subject Name</th>
+
+      <th colspan="3" class="center">Teaching Scheme</th>
+      <th colspan="6" class="center">Examination Scheme</th>
+    </tr>
+
+    <!-- Second header row -->
+    <tr class="hdr2">
+      <th rowspan="2" class="center">Total<br/>Credit</th>
+      <th class="center">Theory</th>
+      <th class="center">Practical</th>
+      <th colspan="2" class="center">Internal Marks</th>
+      <th colspan="2" class="center">External Marks</th>
+      <th colspan="2" class="center">Total Marks</th>
+    </tr>
+
+    <!-- Third header row -->
+    <tr class="hdr3">
+      <th class="center">Lectures<br/>Hours /<br/>Week</th>
+      <th class="center">Per Batch *<br/>Hours /<br/>Week</th>
+      <th class="center">Theory<br/>(IT)</th>
+      <th class="center">Practical<br/>(IP)</th>
+      <th class="center">Theory<br/>(ET)</th>
+      <th class="center">Practical<br/>(EP)</th>
+      <th class="center">Theory<br/>(IT+ET)</th>
+      <th class="center">Practical<br/>(IP+EP)</th>
+    </tr>
+
+    <!-- Data rows -->
+    <tr class="row">
+      <td class="center">901</td>
+      <td class="left">Object Oriented Analysis<br/>&amp; Design With UML</td>
+      <td class="center">4</td>
+      <td class="center">4</td>
+      <td class="center">--</td>
+      <td class="center">30</td>
+      <td class="center">--</td>
+      <td class="center">70</td>
+      <td class="center">--</td>
+      <td class="center">100</td>
+      <td class="center">--</td>
+    </tr>
+
+    <tr class="row">
+      <td class="center">902</td>
+      <td class="left">Mobile Application</td>
+      <td class="center">4</td>
+      <td class="center">2</td>
+      <td class="center">2</td>
+      <td class="center">30</td>
+      <td class="center">20</td>
+      <td class="center">70</td>
+      <td class="center">30</td>
+      <td class="center">100</td>
+      <td class="center">50</td>
+    </tr>
+
+    <tr class="row">
+      <td class="center">903</td>
+      <td class="left">Artificial Intelligence<br/>with ML</td>
+      <td class="center">4</td>
+      <td class="center">2</td>
+      <td class="center">2</td>
+      <td class="center">30</td>
+      <td class="center">20</td>
+      <td class="center">70</td>
+      <td class="center">30</td>
+      <td class="center">100</td>
+      <td class="center">50</td>
+    </tr>
+
+    <tr class="row">
+      <td class="center">904</td>
+      <td class="left">Elective – I</td>
+      <td class="center">4</td>
+      <td class="center">2</td>
+      <td class="center">2</td>
+      <td class="center">30</td>
+      <td class="center">20</td>
+      <td class="center">70</td>
+      <td class="center">30</td>
+      <td class="center">100</td>
+      <td class="center">50</td>
+    </tr>
+
+    <tr class="row">
+      <td class="center">905</td>
+      <td class="left">Elective – II</td>
+      <td class="center">4</td>
+      <td class="center">2</td>
+      <td class="center">2</td>
+      <td class="center">30</td>
+      <td class="center">20</td>
+      <td class="center">70</td>
+      <td class="center">30</td>
+      <td class="center">100</td>
+      <td class="center">50</td>
+    </tr>
+
+    <!-- Total row -->
+    <tr class="total">
+      <td colspan="2" class="right">Total&nbsp;&nbsp;</td>
+      <td class="center">20</td>
+      <td class="center">12</td>
+      <td class="center">8</td>
+      <td class="center"></td>
+      <td class="center"></td>
+      <td class="center"></td>
+      <td class="center"></td>
+      <td class="center">500</td>
+      <td class="center">200</td>
+    </tr>
+  </table>
+
+  <div class="note">
+    <strong>Note:</strong> * Indicates 80 Students batch per practical.
+  </div>
+  <div class="legend">
+    <strong>IT</strong> – Internal Theory &nbsp;&nbsp;&nbsp;
+    <strong>IP</strong> – Internal Practical &nbsp;&nbsp;&nbsp;
+    <strong>ET</strong> – External Theory &nbsp;&nbsp;&nbsp;
+    <strong>EP</strong> – External Practical
+  </div>
+
+  <div class="list-wrap">
+    <div>
+      <div class="list-title">List of Elective Subjects:</div>
+      <ol>
+        <li>MVC with ASP.NET C#</li>
+        <li>Ethical Hacking</li>
+        <li>Wireless Technology</li>
+        <li>Human Computer Interaction &amp; Interface Design</li>
+      </ol>
+    </div>
+    <div style="margin-top:22px">
+      <ol start="5">
+        <li>Compiler Design</li>
+        <li>Digital Image Processing</li>
+        <li>Embedded Systems</li>
+        <li>Theory of Automata &amp; Formal Language</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
