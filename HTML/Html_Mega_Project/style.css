@@ -1,0 +1,32 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("./Images/bg2.jpg");
+      background-size: cover;     
+      background-position: center;
+      background-attachment: fixed; 
+      
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+     .content {
+      color: white;
+      padding: 50px;
+    }
