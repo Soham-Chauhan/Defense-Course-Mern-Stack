@@ -1,0 +1,27 @@
+.container{
+    height: 350px;
+    width: 500px;
+    border: 1px black;
+    position: relative;
+}
+
+#first, #third{
+    height: 100px;
+    background-color: rgb(212, 10, 10);
+}
+
+#second{
+    height: 150px;
+    background-color: rgb(2, 2, 92);
+    /* position: relative; */
+}
+
+#fourth{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    top: 100px;
+    left: 175px;
+    border-radius: 50%;
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List & Tables in HTML</title>
+    
+</head>
+<body>
+      <header>
+        <br><br>
+        <div class="navbar">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a href="Lecture_1.html">Internet Working</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_2.html">What is HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_3.html">List & Tables</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_4.html">FilePath System</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_5.html">HTML Forms</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_6.html">HTML Media</a>&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>
+            <hr>   
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h1>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                What is List and Tables?
+            </h1>
+            <hr>
+        </div>
+
+
+        <div>
+            <h2>List Elements (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;) : </h2>
+            <p><b>What it is: </b>These tags are used to create lists. This is a perfect example of nesting.</p>
+            <p><b>The Tags:</b></p>
+            <ul>
+                <li><b>&lt;ul&gt;: </b>An Unordered List. It creates a bulleted list.</li>
+                <li><b>&lt;ol&gt;: </b>An Ordered List. It creates a numbered list.</li>
+                <li><b>&lt;li&gt;: </b>A List Item. Each item in either type of list must be wrapped in an &lt;li&gt; tag.</li>
+            </ul>
+            <p><b>The Purpose: </b>To group related items together in a list format.</p>
+            <p><b>The &lt;li&gt; elements are nested as children inside the &lt;ul&gt; parent.</b></p>
+            <p><b>Example (Nesting in action): </b></p>
+            <img src="./Img/list.png" alt="List Image" height="400px" width="600px">
+
+            <h3>Output : </h3>
+            <p><b>Unordered List : </b></p>
+            <ul>
+                <li>Tea Bag</li>
+                <li>Water</li>
+                <li>Sugar</li>
+                <li>Milk</li>
+            </ul>
+
+            <p><b>Ordered List : </b></p>
+            <ol>
+                <li>First, boil the water in a kettle.</li>
+                <li>Add tea bag, sugar and milk into it</li>
+                <li>Keep boiling it for 5 minutes </li>
+                <li>Serve the tea by pouring it into cup</li>
+            </ol><br>
+            <hr>
+        </div>
+
+        <div>
+            <h2>Nested List : </h2>
+            <ul>
+                <li><b>A list inside another list.</b></li>
+                <li><b>Means you put &lt;ul&gt; (unordered list) or &lt;ol&gt; (ordered list) inside an &lt;li&gt; item.</b></li>
+            </ul>
+            
+            <h3>Example : </h3>
+            <img src="./Img/list2.png" alt="Nested list" height="400px" width="600px">
+
+            <h3>Output : </h3>
+            <h3>Fruits and their Types</h3>
+
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango
+                    <ul>
+                        <li>Alphonso</li>
+                        <li>Dasheri</li>
+                        <li>Kesar</li>
+                    </ul>
+                </li>
+                <li>Orange</li>
+            </ul><br>
+            <hr>
+        </div>
+
+        <div>
+            <h2>Tables in HTML : </h2>
+            <p><b>A table is used to display data in rows and columns (like in Excel).We use these tags:</b></p>
+            <h4>We use these tags : </h4>
+            <ul>
+                <li><b>&lt;table&gt; → </b>creates the table</li><br>
+                <li><b>&lt;tr&gt; → </b>table row</li><br>
+                <li><b>&lt;th&gt; → </b>table header (bold, centered by default)</li><br>
+                <li><b>&lt;td&gt; → </b>table data (normal cell)</li>
+            </ul>
+
+            <h3>Table Example : </h3>
+            <img src="./Img/table.png" alt="table" height="500px" width="500px">
+            <h3>Output : </h3>
+
+            <table border="1"> <!-- border="1" gives simple border -->
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>Soham</td>
+                    <td>Math</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>Ravi</td>
+                    <td>Science</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Aditi</td>
+                    <td>English</td>
+                    <td>92</td>
+                </tr>
+            </table><br>
+
+            <h2>Most Usefull Table Attribute : </h2>
+            <ol>
+                <li><h3>border → Sets the table border.</h3>
+                    <ul>
+                        <li><b>&lt;table border="1"&gt;</table></b></li>
+                    </ul>
+                </li>
+
+                <li><h3>align → Aligns table or content (left, right, center).</h3>
+                    <ul>
+                        <li><b>&lt;table border="1" align="center"&gt;</b></li>
+                    </ul>
+                </li>
+                <li><h3>colspan → Merge columns (horizontally).</h3>
+                    <ul>
+                        <li><b>&lt;td colspan="2"&gt;This cell covers 2 columns&lt;/td&gt;</b></li>
+                    </ul>
+                </li>
+                <li><h3>rowspan → Merge rows (vertically).</h3>
+                    <ul>
+                        <li><b>&lt;td rowspan="2"&gt;This cell covers 2 rows&lt;/td&gt;</b></li>
+                    </ul>
+                </li>
+            </ol><br>
+            <hr>
+        </div>
+
+        <div>
+            <h2>Complex Table Example : </h2>
+            <table border="2px solid black">
+        <thead>
+           <tr>
+            <th rowspan="4">Sub No.</th>
+            <th rowspan="4">Subject Name</th>
+            <th rowspan="2" colspan="3">Teaching Scheme</th>
+            <th rowspan="2" colspan="6">Examination Scheme</th>
+           </tr>
+           <tr></tr>
+           <tr>
+            <th rowspan="2">Total Credit</th>
+            <th>Theory</th>
+            <th>Practical/Viva</th>
+            <th colspan="2">Internal Marks</th>
+            <th colspan="2">External Marks</th>
+            <th colspan="2">Total Marks</th>
+           </tr>
+           <tr>
+            <th>Lectures Hours/Week</th>
+            <th>Per Batch* Hours/Week</th>
+            <th>Theory (IT)</th>
+            <th>Practical (IP)</th>
+            <th>Theory (ET)</th>
+            <th>Practical (EP)</th>
+            <th>Theory (IT+ET)</th>
+            <th>Practical (IP+EP)</th>
+           </tr>
+          
+            
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>801</td>
+                <td>Distributed Operating System</td>
+                <td>4</td>
+                <td>4</td>
+                <td>--</td>
+                <td>30</td>
+                <td>--</td>
+                <td>70</td>
+                <td>--</td>
+                <td>100</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <td>802</td>
+                <td>Personality Development and Aptitude Test</td>
+                <td>4</td>
+                <td>2</td>
+                <td>2</td>
+                <td>30</td>
+                <td>20(Viva)</td>
+                <td>70</td>
+                <td>30(Viva)</td>
+                <td>100</td>
+                <td>50(Viva)</td>
+            </tr>
+            <tr>
+                <td>803</td>
+                <td>Big Data Analysis</td>
+                <td>4</td>
+                <td>2</td>
+                <td>2</td>
+                <td>30</td>
+                <td>20</td>
+                <td>70</td>
+                <td>30</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>804</td>
+                <td>Programming Using Python</td>
+                <td>4</td>
+                <td>2</td>
+                <td>2</td>
+                <td>30</td>
+                <td>20</td>
+                <td>70</td>
+                <td>30</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>805</td>
+                <td>XML & Web Services</td>
+                <td>4</td>
+                <td>2</td>
+                <td>2</td>
+                <td>30</td>
+                <td>20</td>
+                <td>70</td>
+                <td>30</td>
+                <td>100</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+        </table><br><br>
+        <hr>
+        </div>
+    </main>
+
+    <footer >
+         <br><br>
+        <div class="navbar">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a href="Lecture_1.html">Internet Working</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_2.html">What is HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_3.html">List & Tables</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_4.html">FilePath System</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_5.html">HTML Forms</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_6.html">HTML Media</a>&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>  
+        </div>
+
+     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        &copy; Soham Chauhan — Since 2025. All Rights Reserved.</p>
+     <hr>
+    </footer>
+</body>
+</html>

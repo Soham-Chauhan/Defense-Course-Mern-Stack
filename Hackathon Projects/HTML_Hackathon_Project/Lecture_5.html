@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    
+</head>
+<body>
+       <header>
+        <br><br>
+        <div class="navbar">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a href="Lecture_1.html">Internet Working</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_2.html">What is HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_3.html">List & Tables</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_4.html">FilePath System</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_5.html">HTML Forms</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_6.html">HTML Media</a>&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>
+            <hr>   
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h1>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                What is HTML Form?
+            </h1>
+            <hr>
+        </div>
+
+        <div>
+            <h2>HTML Form : </h2>
+            <p>=> An HTML form is like a box where users can enter information (name, email, password, etc.).</p>
+            <p>=> It is used to collect data from users and send it to a server (or process it).</p>
+            <p><b>👉 Example in real life: </b>When you sign up on a website, that’s an HTML form.</p>
+            <br>
+
+            <h2>The &lt;form&gt; Element</h2>
+            <ul>
+                <li>Everything starts with the &lt;form&gt; tag.</li><br>
+                <li>Inside it, we put inputs (text boxes, checkboxes, buttons, etc.).</li>
+            </ul>
+            <img src="./Img/form.png" alt="from element" height="120px" width="650px">
+            <h3>Important Attributes : </h3>
+            <ol>
+                <li><b>action → </b>where the data will be sent (server file or URL).
+                    <ul>
+                        <li><b>Example: </b>action="submit.php"</li><br>
+                    </ul>
+                </li>
+                <li><b>method → </b>how the data is sent.
+                    <ul>
+                        <li><b>GET → </b>shows data in URL (for searching).</li><br>
+                        <li><b></b>hides data (for login, signup).</li><br>
+                    </ul>
+                </li>
+            </ol>
+            <hr>
+        </div>
+
+        <div>
+            <h2>Common Form Elements : </h2>
+            <h3>1. Text Input</h3>
+            <img src="./Img/text.png" alt="input text" height="70px" width="650px">
+            <br><br>
+
+            <h3>2. Password Input</h3>
+            <img src="./Img/pass.png" alt="input password" height="70px" width="650px">
+            <br><br>
+
+             <h3>3. Email Input</h3>
+            <img src="./Img/email.png" alt="input email" height="70px" width="650px">
+            <br><br>
+
+             <h3>4. Number Input</h3>
+            <img src="./Img/number.png" alt="input number" height="70px" width="650px">
+            <br><br>
+
+            <h3>5. Radio Button (choose one option)</h3>
+            <img src="./Img/radio.png" alt="input radio" height="100px" width="650px">
+            <br><br>
+
+            <h3>6. Checkbox (choose multiple options)</h3>
+            <img src="./Img/chekbox.png" alt="input checkbox" height="100px" width="650px">
+            <br><br>
+
+            <h3>7. Dropdown (Select)</h3>
+            <img src="./Img/select.png" alt="input dropdown" height="150px" width="650px">
+            <br><br>
+
+            <h3>8. Textarea (big text box)</h3>
+            <img src="./Img/textarea.png" alt="input textarea" height="70px" width="650px">
+            <br><br>
+
+             <h3>9. Submit Button</h3>
+            <img src="./Img/submit.png" alt="input submit" height="70px" width="650px">
+            <br><br>
+
+            <h3>10. Reset Button</h3>
+            <img src="./Img/reset.png" alt="input reset" height="70px" width="650px">
+            <br><br>
+            <hr>
+
+        </div>
+
+        <div>
+            <h2>Other Form Attributes : </h2>
+            <h3>1. name Attribute</h3>
+            <p>=> It gives a name to the input.</p>
+            <p>=> When the form is submitted, the data goes to the server with this name.</p>
+            <p>=> Without <b>name,</b> the server won’t know which data belongs to which input.</p>
+            <img src="./Img/name.png" alt="name Attribute" height="200px" width="650px">
+
+            <h3>2. id Attribute</h3>
+            <p>=> <b>id </b>is like a unique identity for one element.</p>
+            <p>=> It is used by label, JavaScript, or CSS to point to that exact input.</p>
+            <p>=> No two inputs should have the same id.</p>
+            <img src="./Img/id.png" alt="id Attribute"  height="60px" width="650px">
+
+            <h3>3. value Attribute</h3>
+            <p>=> <b>id </b>is like a unique identity for one element.</p>
+            <p>=> It is used by label, JavaScript, or CSS to point to that exact input.</p>
+            <p>=> No two inputs should have the same id.</p>
+            <img src="./Img/value.png" alt="vaule Attribute"  height="220px" width="650px">
+            <br><br>
+            <hr>
+        </div>
+
+        <div>
+            <h2>&lt;label&gt; Tag</h2>
+            <p>=> A label is just text for the input box (so user knows what to type).</p>
+            <p>=> It also improves accessibility (for screen readers).</p>
+            <p>=> If label is linked to input → when you click the label, the input gets focus.</p>
+            <img src="./Img/label.png" alt="label tag"  height="100px" width="650px">
+            <p><b>👉 If you click on “Name:”, the text box will automatically activate.</b></p><br>
+
+            <h3>for Attribute (inside <label>) : </h3>
+            <p>=> The <b>for </b>attribute connects the label to an input using the input’s id.</p>
+            <p>=> Must match exactly the input’s <b>id.</b></p>
+            <img src="./Img/for.png" alt="for attribute" height="100px" width="650px">
+
+            <p><b>Note : </b></p>
+            <ul>
+                <li>for="email" points to id="email".</li><br>
+                <li>So clicking on “Email:” selects the text box.</li>
+            </ul>
+            <br>
+            <hr>
+        </div>
+             <div class="container">
+                <h2>Form Example : </h2>
+                    <form action="">
+            
+            
+                    <h3>Personal Information</h3>
+                    <label for="name">Full Name : </label><br>
+                    <input type="text" name="name" id="name" required>
+                    <br><br>
+
+                    <label for="email">Email : </label><br>
+                    <input type="text" name="email" id="email" required>
+                    <br><br>
+
+                    <label for="phone">Phone : </label><br>
+                    <input type="tel" name="phone" id="phone">
+                    <br><br>
+
+                    <label for="link">Linkedin Profile URL : </label>
+                    <br>
+                    <input type="file" name="link" id="link">                   
+                    
+                    <h3>Professional Experience</h3>
+                    <label for="resume">Upload Your Resume(PDF or DOCX): </label>
+                    <br>
+                    <input type="file" name="resume" id="resume"><br><br>
+                
+                    <label for="letter">Cover Latter : </label>
+                    <br>
+                    <textarea name="letter" id="letter" rows="10" cols="30" placeholder="Tell us why you're a grat fit for this role..."></textarea>
+                    <br><br>
+
+                    <label for="year">Years of Professional Experience : </label><br>
+                    <input type="text" name="year" id="year">
+                    <br><br>
+                    
+                    <label for="jdate">Earliest Possible Start Date : </label><br>
+                    <input type="date" name="jdate" id="jdate">
+                    <br><br>
+                    
+                    <h3>Skills & Availabilty</h3>
+                    <label for="gender">Primary Skillest (Choose One) : </label>
+                    <br>
+                    <input type="radio" name="skill" id="frontend" value="fronted">
+                    <label for="fronted">Frontend Development</label>
+                    <br>
+                    <input type="radio" name="skill" id="backend" value="backend">
+                    <label for="backend">Backend Development</label>
+                    <br>
+                    <input type="radio" name="skill" id="fullstack" value="fullstack">
+                    <label for="fullstack">Fullstack development</label>
+                    <br><br>
+
+                    <label for="extraSkill">Additional Skills (Select all that apply) : </label>
+                    <br>
+                    <input type="checkbox" name="extraSkill" id="react" value="react">
+                    <label for="react">React</label>
+                    <br>
+                    <input type="checkbox" name="extraSkill" id="nodejs" value="nodejs">
+                    <label for="nodejs">Node.Js</label>
+                    <br>
+                <input type="checkbox" name="extraSkill" id="dbms" value="dbms">
+                    <label for="dbms">Database Management</label>
+                    <br>
+                    <input type="checkbox" name="extraSkill" id="cloud" value="cloud">
+                    <label for="cloud">Cloud/Devops</label>
+                    <br><br>
+
+                    <label for="work">Preferred Work Type : </label>
+                    <br>
+                    <select name="work" id="work">
+                        <option value="fulltime">Full Time</option>
+                        <option value="part">Part Time</option>
+                        <option value="remote">Remote Job</option>
+                    </select>
+                
+                    <h3>Final Confirmation</h3>
+                    <input type="checkbox" name="terms" id="terms" value="agree">
+                    <label for="terms">I am legally authorized to work in this country.</label>
+                    <br><br>
+
+                    <label for="answer">How did you hear about us ?</label><br>
+                    <input type="text" name="answer" id="answer" placeholder="e.g.Linkedin,company"><br><br>
+
+                    <button type="submit">Submit Application</button>
+                    <button type="reset">Clear Form</button>
+                
+                    
+                </form>
+    </div>
+    </main>
+
+    <footer >
+         <br><br>
+        <div class="navbar">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a href="Lecture_1.html">Internet Working</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_2.html">What is HTML</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_3.html">List & Tables</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_4.html">FilePath System</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_5.html">HTML Forms</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Lecture_6.html">HTML Media</a>&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>  
+        </div>
+
+     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        &copy; Soham Chauhan — Since 2025. All Rights Reserved.</p>
+     <hr>
+    </footer>
+</body>
+</html>
