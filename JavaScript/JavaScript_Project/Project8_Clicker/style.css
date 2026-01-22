@@ -1,0 +1,28 @@
+.circle{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: grow 5s forwards;
+    position: absolute;
+}
+
+@keyframes grow {
+    0%{
+       transform: rotate(0deg);
+        /* transform: scale(1); */
+       opacity: 1;
+       font-size: 20px;
+    }
+    100%{
+       transform: rotate(180deg);
+       /* transform: scale(4); */
+       opacity: 0;
+       font-size: 50px;
+    }
+
+    
+}

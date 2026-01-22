@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+</head>
+ <style>
+        body{
+            background-color: black;
+            color:white;
+            font-size:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+         button{
+            margin-left: 80px;
+            height: 30px;
+            width: 100px;
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: rgb(170, 112, 5);
+            color: rgb(255, 244, 244);
+        }
+
+        #parent{
+            padding-left: 35px;
+            height: 400px;
+            width: 300px;
+            border: 1px solid white;
+        }
+ </style>
+
+<body>
+    <div id="parent">
+        <h1>Love Calculator</h1>
+        <form action="">
+            <label for="boy">Boy : </label>
+            <input type="text" id="boy" name="boy" required>
+            <br><br>
+
+            <label for="girl">Girl : </label>
+            <input type="text" id="girl" name="girl" required>
+            <br><br>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <h2>Your Result : </h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
